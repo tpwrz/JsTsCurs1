@@ -179,3 +179,8 @@ export async function updateActivity() {
 
     **Promise** - абстракция, представляющая собой обещание выполнения определенного действия, которое может завершиться успешно или с ошибкой. В Promise используется вложенность, последовательность разрешения асинхронных функций осуществляется через цепочку `.then()`.
     **async / await** - с их помощью можно последовательно выполнять асинхронные операции. Эту структуру можно использовать в try-catch, что облегчает читаемость кода. Для использования `await` необходимо определить функцию, в которой используется `await` как `async`. С `Promise` такого делать не надо.
+
+# Список использованных источников
+* [temporar access to api](https://cors-anywhere.herokuapp.com/corsdemo)
+* [working ling to bored api](https://bored-api.appbrewery.com)
+* [how to use modules](https://github.com/MSU-Courses/javascript_typescript/blob/main/docs/07_modules/73_export_import.md)
