@@ -35,7 +35,7 @@ console.log(transactionAnalyzer.addTransaction(new_transaction));
 console.log("\t\t\tshow transaction by ID *58*");
 console.log(transactionAnalyzer.findTransactionById("58"));
 ```
-![result in console](image.png)
+![result in console](./imgs/image.png)
 
 # Ответы на контрольные вопросы
 1. Какие примитивные типы данных существуют в JavaScript?

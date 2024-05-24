@@ -51,8 +51,8 @@ function addTransaction() {
     document.getElementById('transactionForm').reset();
 }
 ```
-![adding a scholarship](image-2.png)
-![adding groceries spending](image.png)
+![adding a scholarship](./imgs/image-2.png)
+![adding groceries spending](./imgs/image.png)
 
 2. Пример просмотра полного содержания описания транзакции
 ```js
@@ -63,7 +63,7 @@ row.onclick = function(){
     }
 [...]
 ```
-![click on row shows all description](image-1.png)
+![click on row shows all description](./imgs/image-1.png)
 3. Пример удаления транзакции
 ```js
 /**
@@ -82,7 +82,7 @@ function deleteTransaction(deleteId){
     calculateTotal();
 }
 ```
-![alt text](image-3.png)
+![alt text](./imgs/image-3.png)
 
 # Ответы на контрольные вопросы
 1. Каким образом можно получить доступ к элементу на веб-странице с помощью JavaScript?
