@@ -1,0 +1,142 @@
+
+body{
+  font-size: 16px;
+}
+
+form{
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input-container {
+  position: relative;
+  margin: 50px auto;
+  width: 200px;
+}
+input[type=date]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+
+.input-container input[type="text"],
+.input-container input[type="date"],
+.input-container input[type="number"] {
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 5px 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-container .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ccc;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container input[type="text"]:focus~.label,
+.input-container input[type="number"]:focus~.label,
+.input-container input[type="date"]:focus~.label,
+.input-container input[type="text"]:valid~.label,
+.input-container input[type="date"]:valid~.label,
+.input-container input[type="number"]:valid~.label {
+  top: -20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.input-container .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.input-container input[type="text"]:focus~.underline,
+.input-container input[type="number"]:focus~.underline,
+.input-container input[type="date"]:focus~.underline,
+.input-container input[type="text"]:valid~.underline,
+.input-container input[type="date"]:valid~.underline,
+.input-container input[type="number"]:valid~.underline
+{
+transform: scaleX(1);
+}
+
+button {
+  color:#333;
+  width: fit-content;
+  min-width: 100px;
+  height: 45px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2.5px solid rgba(0, 0, 0, 0.047);
+  box-shadow: 0px 0px 20px -20px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out 0ms;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+  background-color:rgba(138, 138, 138, 0.245);
+  box-shadow: 0px 0px 20px -18px;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+table{
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+}
+tr{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+th,td{
+  padding: 1em;
+  display: flex;
+  min-width: 140px;
+  max-width: 140px;
+  word-wrap: break-word;
+  justify-content: center;
+}
+th{
+  background-color: rgb(144, 196, 241);
+}
+
+.positive{
+  background-color: #4bd65b94;
+}
+.negative{
+  background-color: #d64b4ba4;
+}
+.info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main{
+  display: flex;    
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
