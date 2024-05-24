@@ -1,4 +1,5 @@
-import { getRandomActivityAwait } from "./activity.js";
+// import getRandomActivity from another file
+import { updateActivity } from "./activity.js";
 
-// call imported funtion from another js file
-getRandomActivityAwait();
+// call the function
+updateActivity()
